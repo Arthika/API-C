@@ -660,7 +660,7 @@ extern int32 tradeAliveInfo(uint32 tradeId, uint8 *tradeType, uint32 *limitPrice
 * @return  result of the operation (OK or ERROR)
 ***************************************************************************************************/
 
-int32 tradeHistoricInfo(uint32 tradeId, uint8 *tradeType, uint32 *finishedPrice, uint8 *side, idtype *tiId, int32 *finishedQuantity, idtype *security, idtype *status);
+extern int32 tradeHistoricInfo(uint32 tradeId, uint8 *tradeType, uint32 *finishedPrice, uint8 *side, idtype *tiId, int32 *finishedQuantity, idtype *security, idtype *status);
 /** ************************************************************************************************
 * tradeHistoricInfo
 * @details Returns information of a trade if this is an historic trade

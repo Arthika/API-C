@@ -5,18 +5,18 @@ Arthika basic strategy API example
 
 Instructions:
 - Pull repository contents
-- Import API-C project from Eclipse C/C++ Luna Version
-- Clean & Build the example in strategy.c
-- Execute API-C -user user password -ip ArthikaCoreIP - port ArthikaCorePort
+- Import project from Eclipse C/C++ Luna Version
+- Clean & Build the example API-C project
+- Execute: API-C -user user password -ip ArthikaCoreIP - port ArthikaCorePort
 
 Contents:
-- main.c 			Arthika core connection procedure, do not modify
+- main.c 			Arthika remote stub functions, do not modify
 - strategy.c 		User strategy example, see output below 
 - strategyAPI.h 	Arthika basic C API
 - hftUtils_types.h	Arthika data types
 - libhftLib.a		API library, binary file
 
-Note: the provided library and binary files are Ubuntu 14.04 x86/64 bits
+Note: the binary files are Ubuntu 14.04 x86/64 bits
 
 Output:
 jmg@JuBook:~/git/hft_strategies/API-C/Debug$ ./API-C -user 51 15 -ip 127.0.0.1 -port 1234
