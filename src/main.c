@@ -87,5 +87,10 @@ void exitStub (void)
     return;
 }
 
+void exitFromCoreToStrategy (idtype strategyId)
+{
+    fprintf (stdout, "EXIT command received from core for Strategy %d\n", strategyId);
+    return;
+}
 
 

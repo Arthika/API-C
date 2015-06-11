@@ -583,6 +583,10 @@ extern number	globalTotalAssetExposure (uint16 asset);
 #define ERROR_ORDERTOOSMALL		-1002 // Order too small on send trade
 #define ERROR_ORDERTOOBIG		-1003 // Order too big on send trade
 #define ERROR_NOMARGIN			-1004 // No margin
+#define ERROR_WRONGUSER			-1005 // Wrong user
+#define ERROR_WRONGMESSAGE		-1006 // Wrong message, for remote API calls
+#define ERROR_WRONG_SECURITY	-1007 // Wrong security
+#define ERROR_TRADE_NOT_FOUND	-1008 // Trade not found
 // Trades side
 #define TRADE_SIDE_BUY                     1
 #define TRADE_SIDE_SELL                    2
