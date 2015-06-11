@@ -1,7 +1,5 @@
 # API-C
-Arthika's C-language API
-
-Arthika basic strategy API example
+Arthika's C-language API and basic c-language strategy that uses the API.
 
 Instructions:
 - Pull repository contents
