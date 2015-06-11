@@ -526,10 +526,10 @@ extern number	assetExposure (uint16 pbIndex, uint16 asset);
 * @return  asset exposure
 ***************************************************************************************************/
 
-extern number	securityExposure (uint16 pbIndex, uint16 seurity, number *price);
+extern number	securityExposure (uint16 pbIndex, uint16 security, number *price);
 /** ************************************************************************************************
 * securityExposure
-* @details Returns the seurity exposure for a given Prime Broker
+* @details Returns the security exposure for a given Prime Broker
 * @param   pbIndex  we request for
 * @param   security we request for
 * @param   price (output parameter). Exposure average price
@@ -539,7 +539,7 @@ extern number	securityExposure (uint16 pbIndex, uint16 seurity, number *price);
 extern number	totalAssetExposure (uint16 pbIndex, uint16 asset);
 /** ************************************************************************************************
 * totalAssetExposure
-* @details Returns the asset exposure for a given a Prime Broker
+* @details Returns the total exposure to an asset for a given a Prime Broker
 * @param   pbIndex we request for
 * @param   asset   we request for
 * @return  asset exposure
@@ -548,15 +548,15 @@ extern number	totalAssetExposure (uint16 pbIndex, uint16 asset);
 extern number	globalAssetExposure (uint16 asset);
 /** ************************************************************************************************
 * globalAssetExposure
-* @details Returns the asset exposure for a given a Prime Broker
+* @details Returns the global asset exposure for a given a Prime Broker
 * @param   asset we request for
 * @return  asset exposure
 ***************************************************************************************************/
 
-extern number	globalSecurityExposure (uint16 seurity, number *price);
+extern number	globalSecurityExposure (uint16 security, number *price);
 /** ************************************************************************************************
 * globalSecurityExposure
-* @details Returns the seurity exposure for a given Prime Broker
+* @details Returns the global security exposure for a given Prime Broker
 * @param   security we request for
 * @param   price (output parameter). Exposure average price
 * @return  security exposure
@@ -565,7 +565,7 @@ extern number	globalSecurityExposure (uint16 seurity, number *price);
 extern number	globalTotalAssetExposure (uint16 asset);
 /** ************************************************************************************************
 * globalTotalAssetExposure
-* @details Returns the asset exposure for a given a Prime Broker
+* @details Returns the global total asset exposure for a given a Prime Broker
 * @param   asset we request for
 * @return  asset exposure
 ***************************************************************************************************/
