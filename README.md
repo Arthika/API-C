@@ -1,13 +1,7 @@
 # API-C
 Arthika's C-language API and basic c-language strategy that uses the API.
 
-Instructions:
-- Pull repository contents
-- Import project from Eclipse C/C++ Luna Version
-- Clean & Build the example API-C project
-- Execute: API-C -user user password -ip ArthikaCoreIP - port ArthikaCorePort
-
-Contents:
+### Contents:
 - main.c 			Arthika remote stub functions, do not modify
 - strategy.c 		User strategy example, see output below 
 - strategyAPI.h 	Arthika basic C API
@@ -16,7 +10,17 @@ Contents:
 
 Note: the binary files are Ubuntu 14.04 x86/64 bits
 
-Output:
+### Instructions:
+- Pull repository contents
+- Import project from Eclipse C/C++ Luna Version
+- Clean & Build the example API-C project
+- Execute: API-C -user user password -ip ArthikaCoreIP - port ArthikaCorePort
+
+### Example:
+The following Linux shell command executes the 'API-C' strategy that was previously compiled.
+Arguments include the Arthika user ID, the IP address of the core strategy execution machine (127.0.0.1 or local host in this example) and port number.
+The standard output provides the stratgey initial status.
+```
 jmg@JuBook:~/git/hft_strategies/API-C/Debug$ ./API-C -user 51 15 -ip 127.0.0.1 -port 1234
 Command line: Adding user 51 for trading. Total users 1
 Command line: Connecting to core IP address: 127.0.0.1
@@ -73,3 +77,4 @@ Trade Ask finished status:TRADE_STATE_CANCELED_BY_USER with filled Amount:0, ave
 Trade Bid finished status:TRADE_STATE_EXECUTED with filled Amount:60000, average Price:152405
 Finishing strategy
 
+```
