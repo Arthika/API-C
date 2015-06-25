@@ -655,6 +655,16 @@ extern uint32 tradesAlive();
 * @return  number of trades Alive (0 if none found)
 ***************************************************************************************************/
 
+extern int32 tradeInfo(uint32 tradeId, uint8 *tradeType, uint32 *limitPrice, uint8 *side, idtype *tiId, int32 *amount, idtype *security, idtype *status);
+/** ************************************************************************************************
+* tradeInfo
+* @details Returns information of a trade if this is an alive or historic trade
+* @param   tradeId we request the information for
+* @param   all the rest (output parameters) identification of the trade
+* @return  result of the operation (OK or ERROR)
+***************************************************************************************************/
+
+
 extern int32 tradeAliveInfo(uint32 tradeId, uint8 *tradeType, uint32 *limitPrice, uint8 *side, idtype *tiId, int32 *amount, idtype *security, idtype *status);
 /** ************************************************************************************************
 * tradeAliveInfo
