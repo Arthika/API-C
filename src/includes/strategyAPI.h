@@ -579,14 +579,19 @@ extern number	globalTotalAssetExposure (uint16 asset);
 #define MAXIMUM_ORDER 			500000 	// Maximum order size in base currency to reject trade
 #define MINUMUM_STEP			10000 	// Trade step to round odd size trades
 
-#define ERROR_TRADINGINTERFACE	-1001 // Trading Interface Not OK on trade
-#define ERROR_ORDERTOOSMALL		-1002 // Order too small on send trade
-#define ERROR_ORDERTOOBIG		-1003 // Order too big on send trade
-#define ERROR_NOMARGIN			-1004 // No margin
-#define ERROR_WRONGUSER			-1005 // Wrong user
-#define ERROR_WRONGMESSAGE		-1006 // Wrong message, for remote API calls
-#define ERROR_WRONG_SECURITY	-1007 // Wrong security
-#define ERROR_TRADE_NOT_FOUND	-1008 // Trade not found
+#define ERROR_TRADINGINTERFACE					-1001 // Trading Interface Not OK on trade
+#define ERROR_ORDERTOOSMALL						-1002 // Order too small on send trade
+#define ERROR_ORDERTOOBIG						-1003 // Order too big on send trade
+#define ERROR_NOMARGIN							-1004 // No margin
+#define ERROR_WRONGUSER							-1005 // Wrong user
+#define ERROR_WRONGMESSAGE						-1006 // Wrong message, for remote API calls
+#define ERROR_WRONG_SECURITY					-1007 // Wrong security
+#define ERROR_TRADE_NOT_FOUND					-1008 // Trade not found
+#define ERROR_WRONG_ASSET 						-1009 // Wrong asset
+#define ERROR_ACCOUNTINGUNIT_OR_PRIMEBROKER		-1010 // AU or PB not found
+#define ERROR_WRONG_PRIMEBROKER					-1011
+#define ERROR_WRONG_TRADINGINTERFACE			-1012
+
 // Trades side
 #define TRADE_SIDE_BUY                     1
 #define TRADE_SIDE_SELL                    2
