@@ -56,7 +56,7 @@ extern idtype 	strategyId ();
 * @return  Strategy identification (returns 0 on error)
 ***************************************************************************************************/
 
-extern int32 	securityName (idtype security, char* name);
+extern int32 	securityNameGet (idtype security, char* name);
 /** ************************************************************************************************
 * securityName
 * @details Returns the security name for a given security
@@ -65,7 +65,7 @@ extern int32 	securityName (idtype security, char* name);
 * @return  result of the operation (OK or ERROR, defined in hftUtils_types.h)
 ***************************************************************************************************/
 
-extern int32 	assetName (idtype asset, char* name);
+extern int32 	assetNameGet (idtype asset, char* name);
 /** ************************************************************************************************
 * assetName
 * @details Returns the asset name for a given asset
@@ -74,7 +74,7 @@ extern int32 	assetName (idtype asset, char* name);
 * @return  result of the operation (OK or ERROR, defined in hftUtils_types.h)
 ***************************************************************************************************/
 
-extern int32 	statusName (idtype status, char* name);
+extern int32 	statusNameGet (idtype status, char* name);
 /** ************************************************************************************************
 * statusName
 * @details Returns the trade status name for a given status
@@ -494,6 +494,14 @@ extern number	equity (idtype pbIndex);
 * @return  Equity value
 ***************************************************************************************************/
 
+extern number	profitAndLoss (idtype pbIndex);
+/** ************************************************************************************************
+* P&L
+* @details Returns the P&L value for a given Primer Broker Index
+* @param   pbIndex Primer Broker we request the P&L for
+* @return  P&L value
+***************************************************************************************************/
+
 extern number	usedMargin (idtype pbIndex);
 /** ************************************************************************************************
 * usedMargin
@@ -502,19 +510,18 @@ extern number	usedMargin (idtype pbIndex);
 * @return  used Margin value
 ***************************************************************************************************/
 
-extern number	reservedMargin (idtype pbIndex);
-/** ************************************************************************************************
-* reserved Margin
-* @details Returns the reserved Margin value for a given Primer Broker Index
-* @param   pbIndex Primer Broker we request the equity for
-* @return  reserved Margin value
-***************************************************************************************************/
-
 extern number	globalEquity ();
 /** ************************************************************************************************
 * globalEquity
 * @details Returns the aggregated equity value for all Primer Brokers
 * @return  Equity value
+***************************************************************************************************/
+
+extern number	globalProfitAndLoss ();
+/** ************************************************************************************************
+* globalP&L
+* @details Returns the aggregated P&L value for all Primer Brokers
+* @return  GlobalP&L value
 ***************************************************************************************************/
 
 extern number	assetExposure (uint16 pbIndex, uint16 asset);

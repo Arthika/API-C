@@ -93,4 +93,3 @@ void exitFromCoreToStrategy (idtype strategyId)
     return;
 }
 
-

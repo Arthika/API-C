@@ -73,7 +73,7 @@ void strategyInit ()
         for (security = 1; security < NUM_SECURITIES; security++)
         {
     		exposure = securityExposure(pbIndex, security, &price);
-    		if ((exposure != 0)&&(securityName(security, name)==OK))
+    		if ((exposure != 0)&&(securityNameGet(security, name)==OK))
     		{
     			fprintf (stdout, "	%s, security exposure:%f, price:%f, decimal positions:%d\n", name, exposure, price, numberOfDecimalPositions(GBP_USD));
     		}
@@ -81,7 +81,7 @@ void strategyInit ()
         for (asset = 1; asset < NUM_ASSETS; asset++)
         {
         	exposure = assetExposure(pbIndex, asset);
-    		if ((exposure != 0)&&(assetName(asset, name)==OK))
+    		if ((exposure != 0)&&(assetNameGet(asset, name)==OK))
     		{
     			fprintf (stdout, "	%s, asset exposure:%f\n", name, exposure);
     		}
@@ -278,10 +278,10 @@ void strategy ()
 	else if ((cancelled)&&(waitStrategy > 20))
 	{
 		tradeHistoricInfo(tradeIdAsk, NULL, &averagePrice, NULL, NULL, &amount, NULL, &tradeStatus);
-		statusName(tradeStatus, name);
+		statusNameGet(tradeStatus, name);
 		fprintf (stdout, "\nTrade Ask finished status:%s with filled Amount:%d, average Price:%d\n", name, amount, averagePrice);
 		tradeHistoricInfo(tradeIdBid, NULL, &averagePrice, NULL, NULL, &amount, NULL, &tradeStatus);
-		statusName(tradeStatus, name);
+		statusNameGet(tradeStatus, name);
 		fprintf (stdout, "\nTrade Bid finished status:%s with filled Amount:%d, average Price:%d\n", name, amount, averagePrice);
 		waitStrategy = 0;
 		exitStrategy();
