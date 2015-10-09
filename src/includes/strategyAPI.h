@@ -260,6 +260,7 @@ extern int32 	fbdSortedBidPrices (idtype security, idtype tiId, uint32* priceLis
 * fbdSortedBidPrices
 * @details Returns the available Full Book Bid prices (sorted) for a given security
 * @param   security we request the prices for
+* @param   tiId Trading Interface Identification
 * @param   priceList (output parameter). List of available prices, price value
 * @param   liquidityList (output parameter). List of available prices, liquidity value
 * @param   quoteList (output parameter). List of available prices, quote index
@@ -271,6 +272,7 @@ extern int32 	fbdSortedAskPrices (idtype security, idtype tiId, uint32* priceLis
 * fbdSortedAskPrices
 * @details Returns the available Full Book Ask prices (sorted) for a given security
 * @param   security we request the prices for
+* @param   tiId Trading Interface Identification
 * @param   priceList (output parameter). List of available prices, price value
 * @param   liquidityList (output parameter). List of available prices, liquidity value
 * @param   quoteList (output parameter). List of available prices, quote index
